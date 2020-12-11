@@ -6,9 +6,12 @@ const B = new Array(10)
   .fill(null)
   .map((item) => Math.floor(Math.random() * 10));
 
+//! Index para controlar a posição do
+
+/* 
+
 const C = new Array(A.length + B.length);
 
-// Index para controlar a posição do itens
 let index = 0;
 
 for (let i = 0; i < C.length; i++) {
@@ -20,7 +23,16 @@ for (let i = 0; i < C.length; i++) {
     index++;
   }
 }
+ */
 
+//! Outra forma
+
+const C = [];
+
+for (let i = 0; i < 10; i++) {
+  C.push(A[i]);
+  C.push(B[i]);
+}
 console.log(A);
 console.log(B);
 console.log(C);
