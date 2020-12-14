@@ -1,0 +1,11 @@
+{
+  "name": "Atividades_CursoReact_Solutis",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/Bluniz/Atividades_CursoReact_Solutis.git",
+  "author": "Lucas Rosa <lucassantosrosa51@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "node-fetch": "^2.6.1"
+  }
+}

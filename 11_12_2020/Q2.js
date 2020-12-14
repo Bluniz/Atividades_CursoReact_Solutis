@@ -1,8 +1,10 @@
+const fetch = require("node-fetch");
+
 let cepBuscado;
 console.log("Buscando CEP");
 cepBuscado = buscarCep("13845373");
-/* console.log("CEP buscado");
-console.log("CEP encontrado: ", cepBuscado); */
+ console.log("CEP buscado");
+console.log("CEP encontrado: ", cepBuscado); 
 
 function buscarCep(parametro) {
   let cep;
