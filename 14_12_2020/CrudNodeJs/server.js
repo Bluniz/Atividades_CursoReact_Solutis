@@ -14,7 +14,7 @@ const uri = helpers.getUrl(
 );
 
 //! Conexão com o banco mongo
-MongoClient.connect(uri, (err, client) => {
+MongoClient.connect(uri, { useUnifiedTopology: true }, (err, client) => {
   if (err) return console.log(err);
   db = client.db(process.env.DATABASE);
 
