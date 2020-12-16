@@ -3,7 +3,9 @@ require("dotenv/config"); //* Necessário para ler variaveis de ambiente .env
 const helpers = require("./helpers/index"); //* Arquivo de utilidades
 const routes = require("./src/routes");
 const app = express();
-const cors = require('cors');
+const cors = require("cors");
+const bodyParser = require("body-parser");
+
 // Gera URL do banco
 const uri = helpers.getUrl(
   process.env.USER,
@@ -14,9 +16,9 @@ const uri = helpers.getUrl(
 // Conecta com o banco
 helpers.getDatabase(app, uri);
 
-// Config 
+// Config
 app.use(cors());
-app.use(express.json());
+app.use(bodyParser.urlencoded({ extended: true }));
 
 // Engine de View
 app.set("view engine", "ejs");
