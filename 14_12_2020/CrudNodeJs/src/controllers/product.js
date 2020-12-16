@@ -58,7 +58,7 @@ module.exports = {
       }
     );
   },
-
+  // comentário teste
   delete(request, response) {
     let id = request.params.id;
 
